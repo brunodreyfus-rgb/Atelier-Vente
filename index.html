@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Atelier Vente — Vendre avec confiance</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="app" aria-live="polite">
+    <section id="stage" class="stage" tabindex="0"></section>
+
+    <nav class="controls" aria-label="Navigation des slides">
+      <button id="prev" type="button" aria-label="Slide précédente">‹</button>
+      <div class="meta"><span id="counter">01 / 10</span><span class="dot"></span><button id="notesBtn" type="button">Notes</button></div>
+      <button id="next" type="button" aria-label="Slide suivante">›</button>
+    </nav>
+
+    <aside id="notesPanel" class="notes-panel" hidden>
+      <h2>Notes intervenante</h2>
+      <p id="notesText"></p>
+    </aside>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
