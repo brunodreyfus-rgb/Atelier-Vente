@@ -4,23 +4,55 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Atelier Vente — Vendre avec confiance</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <main class="app" aria-live="polite">
-    <section id="stage" class="stage" tabindex="0"></section>
+  <div class="ambient ambient-a"></div>
+  <div class="ambient ambient-b"></div>
 
-    <nav class="controls" aria-label="Navigation des slides">
-      <button id="prev" type="button" aria-label="Slide précédente">‹</button>
-      <div class="meta"><span id="counter">01 / 10</span><span class="dot"></span><button id="notesBtn" type="button">Notes</button></div>
-      <button id="next" type="button" aria-label="Slide suivante">›</button>
-    </nav>
+  <aside class="sidebar" id="sidebar" aria-label="Menu de la formation">
+    <div class="side-brand">
+      <span class="logo-mark">MV</span>
+      <div>
+        <strong>Atelier Vente</strong>
+        <small>Formation interactive</small>
+      </div>
+    </div>
+    <nav id="menu" class="menu"></nav>
+    <button class="ghost-btn" id="collapseBtn" type="button">Masquer le menu</button>
+  </aside>
 
-    <aside id="notesPanel" class="notes-panel" hidden>
-      <h2>Notes intervenante</h2>
-      <p id="notesText"></p>
-    </aside>
+  <main class="experience">
+    <header class="topbar">
+      <button class="icon-btn" id="menuBtn" type="button" aria-label="Afficher le menu">☰</button>
+      <div class="chapter-pill" id="chapterPill">Introduction</div>
+      <div class="top-actions">
+        <button class="ghost-btn" id="notesBtn" type="button">Notes</button>
+        <button class="ghost-btn" id="fullscreenBtn" type="button">Plein écran</button>
+      </div>
+    </header>
+
+    <section id="stage" class="stage" aria-live="polite"></section>
+
+    <footer class="controls">
+      <button class="nav-btn" id="prevBtn" type="button">← Précédent</button>
+      <div class="progress-wrap">
+        <span id="counter">01 / 10</span>
+        <div class="progress"><span id="progressBar"></span></div>
+      </div>
+      <button class="nav-btn primary" id="nextBtn" type="button">Suivant →</button>
+    </footer>
   </main>
+
+  <aside class="notes-panel" id="notesPanel" hidden>
+    <button class="close" id="closeNotes" type="button">×</button>
+    <h2>Notes intervenante</h2>
+    <p id="notesContent"></p>
+  </aside>
+
   <script src="script.js"></script>
 </body>
 </html>

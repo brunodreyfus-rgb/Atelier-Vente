@@ -1,18 +1,16 @@
-# Atelier Vente - site statique
+# Atelier Vente — expérience web interactive
 
-Fichiers prêts pour GitHub / Vercel :
+Site statique prêt pour GitHub / Vercel.
 
-- `index.html`
-- `styles.css`
-- `script.js`
-- `assets/`
+## Fichiers
+- `index.html` : structure de l'expérience
+- `styles.css` : design, animations, responsive
+- `script.js` : contenu, navigation, reveal, notes, plein écran
+- `assets/` : visuels de fond
 
-Déploiement Vercel : créer un projet depuis ce dossier. Aucun build n'est nécessaire.
-
-Commandes utiles pendant la présentation :
-
-- flèche droite / espace : slide suivante
-- flèche gauche : slide précédente
-- bouton Notes ou touche `n` : afficher les notes intervenante
-
-Idées d'amélioration incluses : navigation clavier, barre de progression, notes intervenante, lien externe en slide 2.
+## Déploiement Vercel
+1. Uploadez ce dossier sur GitHub.
+2. Connectez le repo à Vercel.
+3. Framework preset : Other.
+4. Build command : vide.
+5. Output directory : `.`
